@@ -76,6 +76,7 @@ button {
     padding: 0  10px;
     color: var(--white-color) ;
     background-color: var(--player-dark);
+    flex-shrink: 0;
 }
 
 
@@ -86,7 +87,8 @@ button {
 
 .main-content{
     flex-grow: 1;
-    display: flex;
+    display: block;
+
 }
 
 /* widget */
@@ -393,7 +395,42 @@ button {
 }
 
 
+/* main */
 
+.section{
+    margin-top: 40px;
+}
+
+.container{
+    width: 100%;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-12{
+    width: 100%;
+    padding-bottom: 30px;
+}
+.col{
+    width: 50%;
+}
+.card{
+    text-align: center;
+    padding: 10px;
+}
+
+.card img{
+    width: 100%;
+}
+
+.popular img{
+    border-radius: 999px;
+    object-fit: cover;
+    object-position: top;
+}
 
 
 
@@ -491,6 +528,10 @@ button {
 /* ****************************** MEDIUM ************************* */
 
 @media (min-width: 768px){
+
+    .col{
+        width: calc(100% / 4);
+    }
     
 
 }
@@ -503,19 +544,11 @@ button {
 
 
 @media (min-width: 992px){
+    .col{
+        width: calc(100% / 6);
+    }
 
 }
 
 
 
-
-/*  .main-content-nav a:hover::after {
-    color: red; 
-
-    content: "";
-    display: block;
-    height: 2px;
-    width: 20px;
-    background: red;
-}
- */
