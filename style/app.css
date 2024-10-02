@@ -91,6 +91,7 @@ button {
 
 }
 
+
 /* widget */
 
 .all-bar{
@@ -371,13 +372,14 @@ button {
 
 .banner{
     height: var(--banner-heigth);
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.5);
     color: var(--white-color);
     width: 100%;
     position: fixed;
     top: 0;
     left: 0;
     text-align: end;
+    z-index: 5;
 }
 
 .update-btn{
@@ -433,7 +435,39 @@ button {
 }
 
 
+.figure {
+    position: relative;
+}
 
+.figure:hover::after{
+    content: url(../img/play-circle-regular.svg);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    filter: invert(1);
+    scale: 0.5;
+
+}
+
+.figure:hover::before{
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.4);
+
+}
+
+.popular .figure:hover::before{
+border-radius: 999px;
+
+}
 
 /* ================================ media quesries =============================== */
 
