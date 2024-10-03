@@ -517,12 +517,13 @@ html{
 
 .card img{
     width: 100%;
+    display: block;
 }
 
 .popular img{
     border-radius: 999px;
     object-fit: cover;
-    object-position: top;
+    object-position: center;
 }
 
 
