@@ -75,13 +75,14 @@ button {
     position: relative;
 }
 
-.main::-webkit-scrollbar{
+.main::-webkit-scrollbar {
     width: 5px;
+    height: 5px;
     background-color: var(--main-dark);
-    
+
 }
 
-.main::-webkit-scrollbar-thumb{
+.main::-webkit-scrollbar-thumb {
     width: 3px;
     border-radius: 999px;
     background-color: var(--nav-grey);
@@ -506,6 +507,7 @@ html {
 .col-12 {
     width: 100%;
     padding-bottom: 30px;
+    padding: 10px;
 }
 
 .col {
